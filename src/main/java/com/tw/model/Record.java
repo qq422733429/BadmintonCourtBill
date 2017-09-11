@@ -1,12 +1,11 @@
 package com.tw.model;
 
-/**
- * Created by sugarFile on 17/9/11.
- */
 public class Record {
     private String userId;
     private TimeBucket bookingTime;
+    //获取输入是否为取消订单，false：表示预订，true：表示取消订单
     private boolean isCancel;
+    //记录每条记录所对应的价格，包含预订价格和违约金
     private double price;
 
     public Record() {

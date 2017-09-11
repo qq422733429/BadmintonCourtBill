@@ -1,8 +1,6 @@
 package com.tw.model;
 
-/**
- * Created by sugarFile on 17/9/11.
- */
+// 根据管理员输入，创建订单类：包含预订用户id，预订时间，场地id，状态：预订or取消
 public class Order {
     private String userId;
     private TimeBucket bookingTime;

@@ -3,12 +3,11 @@ package com.tw.model;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- * Created by sugarFile on 17/9/11.
- */
 public class TimeBucket {
+    //定义预订场地的开始时间和结束时间，类型为Date
     private Date startTime;
     private Date endTime;
+    //根据预订的时间，获取时间所对应的具体星期日期：1：表示周日，2~6：表示周一~周五，7：表示周日
     private int dayOfWeek;
 
     public Date getStartTime() {

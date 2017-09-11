@@ -1,5 +1,7 @@
 package com.tw.model;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -55,5 +57,27 @@ public class TimeBucket {
         result = 31 * result + endTime.hashCode();
         result = 31 * result + dayOfWeek;
         return result;
+    }
+
+    @Override
+    public String toString() {
+        StringBuffer sb = new StringBuffer();
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+        String date = df.format(startTime);
+        int startHour = startTime.getHours();
+        int endHour = endTime.getHours();
+        sb.append(date);
+        sb.append(" ");
+        if (startHour < 10) {
+            sb.append("0");
+        }
+        sb.append(startHour);
+        sb.append(":00~");
+        if (endHour < 10) {
+            sb.append("0");
+        }
+        sb.append(endHour);
+        sb.append(":00");
+        return sb.toString();
     }
 }

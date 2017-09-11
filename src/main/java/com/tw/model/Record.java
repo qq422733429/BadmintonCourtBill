@@ -69,4 +69,17 @@ public class Record {
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
     }
+
+    @Override
+    public String toString() {
+        StringBuffer sb = new StringBuffer();
+        sb.append(bookingTime);
+        sb.append(" ");
+        if (isCancel()) {
+            sb.append("违约金 ");
+        }
+        sb.append(price);
+        sb.append("元\n");
+        return sb.toString();
+    }
 }

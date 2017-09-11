@@ -11,9 +11,6 @@ import java.util.Date;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by sugarFile on 17/9/11.
- */
 public class InputServicelmplTest {
     @Test
     public void inputInlleagLengthShouldBeInvaild() {

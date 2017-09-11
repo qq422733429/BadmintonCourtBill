@@ -76,9 +76,15 @@ public class Record {
         sb.append(bookingTime);
         sb.append(" ");
         if (isCancel()) {
-            sb.append("违约金 ");
+            sb.append("违约金");
         }
-        sb.append(price);
+        String priceStr = String.valueOf(price);
+        String temp[] = priceStr.split(".");
+        if(temp[1].equals("0")){
+            sb.append(temp[0]);
+        }else {
+            sb.append(price);
+        }
         sb.append("元\n");
         return sb.toString();
     }

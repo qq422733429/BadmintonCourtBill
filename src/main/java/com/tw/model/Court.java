@@ -51,7 +51,13 @@ public class Court {
             sb.append(item);
         }
         sb.append("小计：");
-        sb.append(price);
+        String priceStr = String.valueOf(price);
+        String temp[] = priceStr.split(".");
+        if(temp[1].equals("0")){
+            sb.append(temp[0]);
+        }else {
+            sb.append(price);
+        }
         sb.append("元\n");
         return sb.toString();
     }

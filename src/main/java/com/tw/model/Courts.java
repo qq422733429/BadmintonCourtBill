@@ -48,7 +48,13 @@ public class Courts {
         }
         sb.delete(sb.length() - 1, sb.length());
         sb.append("---\n总计：");
-        sb.append(totalPrice);
+        String priceStr = String.valueOf(totalPrice);
+        String temp[] = priceStr.split(".");
+        if(temp[1].equals("0")){
+            sb.append(temp[0]);
+        }else {
+            sb.append(totalPrice);
+        }
         sb.append("元");
         return sb.toString();
     }

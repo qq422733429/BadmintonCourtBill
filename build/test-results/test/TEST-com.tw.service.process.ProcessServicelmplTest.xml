@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tw.service.process.ProcessServicelmplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-09-11T15:36:04" hostname="MacBook-Pro.local" time="0.003">
+  <properties/>
+  <testcase name="inputExistBookingShouldBeRejected" classname="com.tw.service.process.ProcessServicelmplTest" time="0.0"/>
+  <testcase name="inputNotExistCancelShouldBeRejected" classname="com.tw.service.process.ProcessServicelmplTest" time="0.0"/>
+  <testcase name="calculateWeekendBookingBillShouldBeCorrect" classname="com.tw.service.process.ProcessServicelmplTest" time="0.0"/>
+  <testcase name="calculateWeekdayBookingBillShouldBeCorrect" classname="com.tw.service.process.ProcessServicelmplTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

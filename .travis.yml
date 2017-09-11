@@ -2,7 +2,6 @@ language: java
 install: true
 
 jdk:
-    - oraclejdk7
     - oraclejdk1.8
 
 script: ./gradlew clean build

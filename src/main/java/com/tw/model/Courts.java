@@ -49,7 +49,7 @@ public class Courts {
         sb.delete(sb.length() - 1, sb.length());
         sb.append("---\n总计：");
         String priceStr = String.valueOf(totalPrice);
-        String temp[] = priceStr.split(".");
+        String temp[] = priceStr.split("\\.");
         if(temp[1].equals("0")){
             sb.append(temp[0]);
         }else {

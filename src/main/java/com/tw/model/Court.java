@@ -1,6 +1,7 @@
 package com.tw.model;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 //单个的场地类
 public class Court {
@@ -47,12 +48,12 @@ public class Court {
         sb.append("场地:");
         sb.append(courtId);
         sb.append("\n");
-        for (Record item : bookingRecordList) {
-            sb.append(item);
+        for (int i =bookingRecordList.size()-1;i>=0;i-- ) {
+            sb.append(bookingRecordList.get(i));
         }
         sb.append("小计：");
         String priceStr = String.valueOf(price);
-        String temp[] = priceStr.split(".");
+        String[] temp = priceStr.split("\\.");
         if(temp[1].equals("0")){
             sb.append(temp[0]);
         }else {

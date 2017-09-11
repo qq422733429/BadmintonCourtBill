@@ -79,7 +79,7 @@ public class Record {
             sb.append("违约金");
         }
         String priceStr = String.valueOf(price);
-        String temp[] = priceStr.split(".");
+        String temp[] = priceStr.split("\\.");
         if(temp[1].equals("0")){
             sb.append(temp[0]);
         }else {

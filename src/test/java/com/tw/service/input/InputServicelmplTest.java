@@ -20,7 +20,7 @@ public class InputServicelmplTest {
         InputService inputService = new InputServicelmpl();
         String inStr = "akdkafjdfal sjakf slk";
         Order acturl = null;
-        assertEquals(inputService.isLengthVaild(inStr), acturl);
+        assertEquals(inputService.buildOrders(inStr), acturl);
     }
 
     @Test
@@ -28,7 +28,7 @@ public class InputServicelmplTest {
         InputService inputService = new InputServicelmpl();
         String inStr = "U001 2017/09/08 22:00~23:00 A";
         Order acturl = null;
-        assertEquals(inputService.isDateTimeVaild(inStr), acturl);
+        assertEquals(inputService.buildOrders(inStr), acturl);
     }
 
     @Test
@@ -36,7 +36,7 @@ public class InputServicelmplTest {
         InputService inputService = new InputServicelmpl();
         String inStr = "U001 2017-09-11 22:00~21:00 A";
         Order acturl = null;
-        assertEquals(inputService.isDateTimeVaild(inStr), acturl);
+        assertEquals(inputService.buildOrders(inStr), acturl);
     }
 
     @Test
@@ -44,7 +44,7 @@ public class InputServicelmplTest {
         InputService inputService = new InputServicelmpl();
         String inStr = "U001 2017/09/08 22:00~23:00 A G";
         Order acturl = null;
-        assertEquals(inputService.isCancelFlagVaild(inStr), acturl);
+        assertEquals(inputService.buildOrders(inStr), acturl);
     }
 
     @Test
